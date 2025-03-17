@@ -35,11 +35,11 @@ test('login',async({page}) => {
     const accountcreate = new accountcreatePage(page);
     await accountcreate.navigateToaccountsPage();
     await accountcreate.enteraccountName('Johnson Aravinth');
-    await accountcreate.annualRevenue('5,00,000');
-    await accountcreate.industry('Computer Software');
-    await accountcreate.ownership('Public Corporation');
-    await accountcreate.marketing('Automobile');
-    await accountcreate.email('1999rosejohn@gmail.com');
-    await accountcreate.phonenumber('7502129105');
+    await accountcreate.enterannualRevenue('5,00,000');
+    await accountcreate.selectindustry('Computer Software');
+    await accountcreate.selectownership('Public Corporation');
+    await accountcreate.selectmarketing('Automobile');
+    await accountcreate.enteremail('1999rosejohn@gmail.com');
+    await accountcreate.enterphoneNumber('7502129105');
     await page.waitForTimeout(5000);
 });
