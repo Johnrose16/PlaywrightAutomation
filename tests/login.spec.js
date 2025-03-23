@@ -41,5 +41,5 @@ test('login',async({page}) => {
     await accountcreate.selectmarketing('Automobile');
     await accountcreate.enteremail('1999rosejohn@gmail.com');
     await accountcreate.enterphoneNumber('7502129105');
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(3000);
 });
