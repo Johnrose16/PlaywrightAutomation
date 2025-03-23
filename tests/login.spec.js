@@ -29,7 +29,7 @@ test('login',async({page}) => {
     await account.enterimportantnote('do without mistake');
     await account.selectcurrency('INR - Indian Rupee');
     await account.clicksubmit();
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(3000);
     await account.gohome();
 
     const accountcreate = new accountcreatePage(page);
